@@ -1,0 +1,196 @@
+[
+  {
+    "name": "Input",
+    "details": [
+      {
+        "name": "shape",
+        "html_control": "single-select",
+        "possible_values": [
+          "32",
+          "100,10",
+          "1000,100,null",
+          "null, 10",
+          "60000,null"
+        ],
+        "value": ""
+      },
+      {
+        "name": "batch_size",
+        "html_control": "integer",
+        "value": "55",
+        "min_value": "1"
+      },
+      {
+        "name": "name",
+        "html_control": "integer",
+        "value": "55",
+        "min_value": "1"
+      },
+      {
+        "name": "dtype",
+        "html_control": "single-select",
+        "value": "",
+        "possible_values": [
+          "float32",
+          "float64",
+          "int32"
+        ]
+      },
+      {
+        "name": "sparse",
+        "html_control": "boolean",
+        "description": " A boolean specifying whether the placeholder to be created is sparse. Only one of 'ragged' and 'sparse' can be True. Note that, if sparse is False, sparse tensors can still be passed into the input - they will be densified with a default value of 0.",
+        "value": "",
+        "true_value": "Yes",
+        "false_value": "No"
+      },
+      {
+        "name": "ragged",
+        "html_control": "boolean",
+        "description": " A boolean specifying whether the placeholder to be created is sparse. Only one of 'ragged' and 'sparse' can be True. Note that, if sparse is False, sparse tensors can still be passed into the input - they will be densified with a default value of 0.",
+        "value": "",
+        "true_value": "Yes",
+        "false_value": "No"
+      }
+    ]
+  },
+  {
+    "name": "Dense",
+    "details": [
+      {
+        "name": "units",
+        "html_control": "integer",
+        "value": "",
+        "min_value": "1",
+        "max_value": ""
+      },
+      {
+        "name": "activation",
+        "html_control": "single-select",
+        "value": "relu",
+        "possible_values": [
+          "deserialize",
+          "elu",
+          "exponential",
+          "gelu",
+          "hard_sigmoid",
+          "linear",
+          "relu",
+          "selu",
+          "serialize",
+          "sigmoid",
+          "softmax",
+          "softplus",
+          "softsign",
+          "swish",
+          "tanh"
+        ]
+      },
+      {
+        "name": "use_bias",
+        "html_control": "boolean",
+        "value": "true",
+        "true_value": "Yes",
+        "false_value": "No"
+      },
+      {
+        "name": "kernel_initializer",
+        "html_control": "single-select",
+        "value": "glorot_uniform",
+        "possible_values": [
+          "glorot_uniform",
+          "constant",
+          "glorot_normal",
+          "he_normal",
+          "he_uniform",
+          "lecun_normal",
+          "lecun_uniform",
+          "random_normal",
+          "random_uniform",
+          "truncated_normal",
+          "variance_scaling"
+        ]
+      },
+      {
+        "name": "bias_initializer",
+        "html_control": "single-select",
+        "value": "zeros",
+        "possible_values": [
+          "glorot_uniform",
+          "constant",
+          "glorot_normal",
+          "he_normal",
+          "he_uniform",
+          "lecun_normal",
+          "lecun_uniform",
+          "random_normal",
+          "random_uniform",
+          "truncated_normal",
+          "variance_scaling"
+        ]
+      },
+      {
+        "name": "kernel_regularizer",
+        "html_control": "single-select",
+        "value": "",
+        "possible_values": [
+          "None",
+          "l1",
+          "l2",
+          "l1_l2",
+          "orthogonal"
+        ]
+      },
+      {
+        "name": "bias_regularizer",
+        "html_control": "single-select",
+        "value": "",
+        "possible_values": [
+          "None",
+          "l1",
+          "l2",
+          "l1_l2",
+          "orthogonal"
+        ]
+      },
+      {
+        "name": "activity_regularizer",
+        "html_control": "single-select",
+        "value": "",
+        "possible_values": [
+          "None",
+          "l1",
+          "l2",
+          "l1_l2",
+          "orthogonal"
+        ]
+      },
+      {
+        "name": "kernel_constraint",
+        "html_control": "single-select",
+        "value": "",
+        "possible_values": [
+          "None",
+          "max_norm",
+          "min_max_norm",
+          "non_neg",
+          "unit_norm",
+          "radial_constraint"
+        ]
+      },
+      {
+        "name": "bias_constraint",
+        "html_control": "single-select",
+        "value": "",
+        "possible_values": [
+          "None",
+          "max_norm",
+          "min_max_norm",
+          "non_neg",
+          "unit_norm",
+          "radial_constraint"
+        ]
+      }
+    ]
+  }
+]
